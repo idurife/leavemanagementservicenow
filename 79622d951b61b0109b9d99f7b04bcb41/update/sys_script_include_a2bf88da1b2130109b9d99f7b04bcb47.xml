@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_652573_ims.lmsAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>lmsAjax</name>
+        <script><![CDATA[var lmsAjax = Class.create();
+lmsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getDateDiff: function () {
+        var d1 = new GlideDate();
+        d1.setDisplayValue(this.getParameter('sysparm_start'));
+
+        var d2 = new GlideDate();
+        d2.setDisplayValue(this.getParameter('sysparm_end'));
+        var duration = GlideDate.subtract(d1, d2);
+        return duration.getNumericValue();
+    },
+    getLeaveBucket: function () {
+
+        gs.info('sysparm_user:' +this.getParameter('sysparm_user'));
+        gs.info('sysparm_leavetype:' +this.getParameter('sysparm_leavetype'));
+        var record = new GlideRecord('x_652573_ims_leave_bucktet');
+        record.addQuery('employee', this.getParameter('sysparm_user'));
+        record.addQuery('leave_type', this.getParameter('sysparm_leavetype'));
+        record.query();
+        if (record.next()) {
+            gs.info("entro");
+            var leaveDetails = {};
+            leaveDetails.accrued = '' + record.accrued;
+            leaveDetails.balance = '' + record.balance;
+            leaveDetails.taken = '' + record.taken;
+            return JSON.stringify(leaveDetails);
+
+        }
+    },
+    type: 'lmsAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-26 14:01:18</sys_created_on>
+        <sys_id>a2bf88da1b2130109b9d99f7b04bcb47</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>lmsAjax</sys_name>
+        <sys_package display_value="Leave Management System" source="x_652573_ims">79622d951b61b0109b9d99f7b04bcb41</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management System">79622d951b61b0109b9d99f7b04bcb41</sys_scope>
+        <sys_update_name>sys_script_include_a2bf88da1b2130109b9d99f7b04bcb47</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-26 16:45:22</sys_updated_on>
+    </sys_script_include>
+</record_update>

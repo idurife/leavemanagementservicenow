@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_652573_ims.lmsAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>lmsAjax</name>
+        <script><![CDATA[var lmsAjax = Class.create();
+lmsAjax.prototype = {
+    initialize: function() {
+    },
+
+    type: 'lmsAjax'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-26 13:51:25</sys_created_on>
+        <sys_id>e66d8c5a1b2130109b9d99f7b04bcb53</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>lmsAjax</sys_name>
+        <sys_package display_value="Leave Management System" source="x_652573_ims">79622d951b61b0109b9d99f7b04bcb41</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management System">79622d951b61b0109b9d99f7b04bcb41</sys_scope>
+        <sys_update_name>sys_script_include_e66d8c5a1b2130109b9d99f7b04bcb53</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-26 14:00:03</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Leave Management System">79622d951b61b0109b9d99f7b04bcb41</application>
+        <file_path/>
+        <instance_id>530f916ddb483050f37acac5059619bc</instance_id>
+        <instance_name>dev114858</instance_name>
+        <name>sys_script_include_e66d8c5a1b2130109b9d99f7b04bcb53</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_652573_ims.lmsAjax&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;lmsAjax&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var lmsAjax = Class.create();
+lmsAjax.prototype = {
+    initialize: function() {
+    },
+
+    type: 'lmsAjax'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-07-26 13:51:25&lt;/sys_created_on&gt;&lt;sys_id&gt;e66d8c5a1b2130109b9d99f7b04bcb53&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;lmsAjax&lt;/sys_name&gt;&lt;sys_package display_value="Leave Management System" source="x_652573_ims"&gt;79622d951b61b0109b9d99f7b04bcb41&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Leave Management System"&gt;79622d951b61b0109b9d99f7b04bcb41&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_e66d8c5a1b2130109b9d99f7b04bcb53&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-07-26 14:00:03&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-916376572</payload_hash>
+        <record_name>lmsAjax</record_name>
+        <reverted_from/>
+        <source>71622d951b61b0109b9d99f7b04bcb44</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-26 14:00:03</sys_created_on>
+        <sys_id>b67fc4da1b2130109b9d99f7b04bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ae31d926c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-26 14:00:03</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>327fc4da86213010387d82fa0c33952f</update_guid>
+        <update_guid_history>327fc4da86213010387d82fa0c33952f:-916376572,cb4f04da45213010c6641555fff439c2:1698254409,eb8dcc5a76213010b7c83ff60acb7360:-916376572,508d8c1afa213010d14d566ead369615:1698254409</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-26 14:00:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1f4c70110b2f4aff9d844d3d926077f1</sys_id>
+        <sys_metadata>e66d8c5a1b2130109b9d99f7b04bcb53</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lmsAjax</sys_name>
+        <sys_package display_value="Leave Management System" source="x_652573_ims">79622d951b61b0109b9d99f7b04bcb41</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management System">79622d951b61b0109b9d99f7b04bcb41</sys_scope>
+        <sys_scope_delete display_value="">6d96eb5ca78c4838b8caf39edbd24040</sys_scope_delete>
+        <sys_update_name>sys_script_include_e66d8c5a1b2130109b9d99f7b04bcb53</sys_update_name>
+        <sys_update_version display_value="sys_script_include_e66d8c5a1b2130109b9d99f7b04bcb53">b67fc4da1b2130109b9d99f7b04bcb2f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-26 14:00:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
